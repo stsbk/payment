@@ -1,0 +1,342 @@
+body {
+    background-color: #ebedee;
+    font-family: sans-serif;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65vh;
+}
+
+.main {
+    width: 90%;
+    height: 80vh;
+    background-color: #f4f5f7;
+    margin: 60px;
+    box-shadow: 5px 0px 25px 5px #B7B8C2;
+}
+
+.item-info {
+    color: #858796;
+}
+
+.item-price {
+    color: #0084b0;
+    font-size: 42px;
+    font-style: italic;
+    margin: 0;
+}
+
+.green {
+    color: green !important;
+    border-bottom: 5px solid green !important;
+}
+
+h2 {
+    color: #0084b0;
+    margin-top: 0;
+}
+
+.header {
+    border-bottom: 3px solid #ebedee;
+}
+
+.myInput {
+    border: none;
+    width: 400px;
+    height: 30px;
+    border-bottom: 2px solid #B7B8C2;
+    font-size: 26px;
+    color: #0084b0;
+    background-color: #f4f5f7;
+    margin-bottom: 20px;
+}
+
+.myInput:focus {
+    outline: none;
+    border-bottom: 2px solid #0084b0;
+    margin-bottom: 20px;
+}
+
+.label {
+    color: #B7B8C2;
+}
+
+.required:focus {
+    border-bottom: 2px solid red;
+}
+
+.required:focus::placeholder {
+    color: red;
+    font-size: 12px;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+li {
+    text-align: center;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    color: #B7B8C2;
+    width: 25%;
+    cursor: pointer;
+}
+
+#select-country select {
+    color: #ebedee !important;
+    font-size: 12px !important;
+}
+ 
+#confirm {
+    color: #B7B8C2;
+    cursor: auto;
+    background-color: #f4f5f7;
+    border-bottom: none;
+}
+
+li:hover {
+    color: #0084b0;
+    border-bottom: 5px solid #0084b0;
+    background-color: #ebedee;
+}
+
+img {
+    width: 350px;
+    height: 200px;
+} 
+
+.quantity {
+    border: none;
+    width: 50px;
+    height: 30px;
+    border-bottom: 2px solid #B7B8C2;
+    font-size: 26px;
+    color: #0084b0;
+    background-color: #f4f5f7;
+    margin-bottom: 20px;
+}
+
+.quantity:focus {
+    outline: none;
+    border-bottom: 2px solid #0084b0;
+    margin-bottom: 20px;
+}
+
+#quantity-label {
+    font-style: italic;
+    color: #0084b0;
+    font-weight: 600;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.right {
+    width: 30%;
+}
+
+.info {
+    display: none;
+}
+
+.card-none {
+    display: none;
+}
+
+.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    height: 100%;
+}
+
+.label {
+    margin: 0;
+}
+
+.shopping {
+    width: 90%;
+}
+
+.light {
+    color: #0084b0;
+    border-bottom: 5px solid #0084b0;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.auto-form,
+.adress-form {
+    width: 50%;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fields {
+    display: flex;
+    flex-direction: row;
+}
+
+#card-date,
+#card-cvv {
+    width: 174px;
+    margin-right: 50px;
+}
+
+.card {
+    width: 350px;
+    height: 200px;
+    background-color: #3081ac;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.card-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.number,
+.name,
+.data {
+    color: #fff;
+}
+
+.number {
+    font-size: 23px;
+    letter-spacing: 3px;
+    margin-top: 0;
+}
+
+.name,
+.data {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.visa {
+    position: relative;
+    left: 190px;
+    width: 120px;
+    top: 0px;
+}
+
+.mastercard {
+    position: relative;
+    left: 210px;
+    width: 100px;
+    top: -15px;
+}
+
+.pay-btn {
+    width: 410px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #3081ac;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.pay-btn:hover {
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.steps-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.next-step {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #0084b0;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.next-step:hover {
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.prev-step {
+    color: #858796;
+    cursor: pointer;
+}
+
+.prev-step:hover {
+    color: #0084b0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.disabled,
+.disabled:hover {
+    cursor: auto;
+    border: none;
+    background-color: #858796;
+}
+
+.green-btn,
+.green-btn:hover {
+    cursor: auto;
+    border: none;
+    background-color: #00b04c;
+}
+
+.confirm-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.confirm-menu:last-child {
+    font-size: 42px;
+    color: #858796;
+    text-align: center;
+}
+
+.user-confirm {
+    font-size: 76px;
+}

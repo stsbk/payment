@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./autocomplete/autocomplete.css">
+</head>
+
+<body>
+    <div class='main'>
+
+        <div class='header'>
+            <ul class='navbar' id="navbar">
+                <li class="nav-item light">YOUR ORDER</li>
+                <li class="nav-item">SHOPPING DETAILS</li>
+                <li class="nav-item">PAYMENT DETAILS</li>
+                <li class="nav-item" id="confirm">CONFIRMATION</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class='content'>
+                <div class='info active' id="YOUR ORDER">
+                    <div class='left'>
+                        <img src='./static/pictures/sunglasses.jpg' alt="sunglasses" />
+                    </div>
+                    <div class="right">
+                        <h2>Luis Vuitton Sunglasses</h2>
+                        <p class="item-info">The 1.1 Millionaires sunglasses evoke eyewear worn in Al Capone's Chicago,
+                            an old stomping ground of Artistic Director Virgil Abloh. This pair features a deep beveled
+                            front and bright contrast color thanks to the detailed gold-color
+                            Monogram pattern along the top. S-lock hinges are an eye-catching accent taken from
+                            sunglasses found in the House archives.</p>
+                        <div class="price">
+                            <div>
+                                <label for="quantity" id="quantity-label">Quantity:</label>
+                                <input type="number" id="quantity" class="quantity" value="1" min="1">
+                            </div>
+                            <div>
+                                <p class="item-price" id="item-price">180</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='info' id="SHOPPING DETAILS">
+                    <div class='left shopping'>
+                        <h2>Please, choice your adress</h2>
+                        <div class="form-info">
+                            <div class="auto-form">
+                                <p class="label">Country</p>
+                                <select class="myInput" id="select-country">
+                                    <option>Please, choise your country:</option>
+                                </select>
+                            </div>
+
+                            <div class="adress-form">
+                                <p class="label">State</p>
+                                <input class="myInput adress-input" type="text">
+
+                                <p class="label adress-input">City</p>
+                                <div id="city">
+                                    <input class="myInput adress-input" type="text" id="city-field">
+                                    <form autocomplete="off" action="/action_page.php" id="autocomplete" hidden>
+                                        <div class="autocomplete">
+                                            <input class="myInput" id="myInput" type="text" name="myCountry">
+                                        </div>
+                                    </form>
+                                </div>
+
+
+                                <p class="label">Street</p>
+                                <input class="myInput adress-input" type="text">
+
+                                <p class="label">House</p>
+                                <input class="myInput adress-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='info' id="PAYMENT DETAILS">
+                    <div class='left'>
+                        <div class="card">
+                            <img src="./static/pictures/visa.png" alt="visa" class="visa card-none" id="visa" />
+                            <img src="./static/pictures/mastercard.png" alt="mastercard" class="mastercard card-none"
+                                id="mastercard" />
+                            <p class="number" id="number">0000 0000 0000 0000</p>
+                            <div class="card-name">
+                                <span class="name" id="name">DEFAULT USER</span>
+                                <span class="data" id="data">00/00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2>Payment Details</h2>
+                        <p class="label">Name on Card</p>
+                        <input class="myInput card-field" id="card-name-field" type="text">
+                        <p class="label">Card Number</p>
+                        <input class="myInput card-field" id="card-number-field" type="number">
+                        <div class="fields">
+                            <div>
+                                <p class="label">Valid Through</p>
+                                <input class="myInput card-field" id="card-date" type="number">
+                            </div>
+                            <div>
+                                <p class="label">CVV</p>
+                                <input class="myInput card-field" id="card-cvv" type="number" max="3">
+                            </div>
+                        </div>
+                        <button class="pay-btn" id="pay-btn">PAY</button>
+                    </div>
+                </div>
+
+                <div class='info' id="CONFIRMATION">
+                    <div class="confirm-menu">
+                        <h2 class="user-confirm">Dear </h2>
+                        <p>thank you for your purchase!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="steps-buttons">
+                <div class="prev-step hidden" id="prev-step-btn">← Previous step</div>
+                <button class="next-step" id="next-step-btn">Next step</button>
+            </div>
+        </div>
+    </div>
+    <script src="static/data/data.js"></script>
+    <script src="controller.js"></script>
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="app.js"></script>
+    <script src="./autocomplete/autocomplete.js"></script>
+</body>
+
+</html>
